@@ -1,0 +1,17 @@
+For work this module use Arduino Uno and sc56-11gwa with pin-set below.
+Each pin of sc56-11gwa MUST be connect with pin of Arduino via resistor at 220 Ohm!
+Else your sc56-11gwa can be damaged!!!
+
+Arduino pin:    sc56-11gwa pin:
+    GND             3 or 8
+    3               1
+    4               2
+    6               4
+    8               6
+    9               7
+    11              9
+    12              10
+
+It simple logic: Arduino pin = sc56-11gwa pin + 2.
+
+Pin 5 of sc56-11gwa (dot) not used.
