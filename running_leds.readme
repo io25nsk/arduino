@@ -1,6 +1,13 @@
 For this module you need Arduino Uno and 12 LED in 3 different colors, example:
 red, yellow and green, for 4 LEDs in each color.
 LEDs of each color must alternate every 2 LEDs another color.
+
+You need upload to Arduino sketch Firmata:
+Open Arduino IDE -> File -> Examples -> Firmata -> StandardFirmata -> upload.
+
+Then in your favorite Python IDE install python module firmata:
+pip install firmata.
+
 Anode of each LED MUST be connect with digital pin (2-13) of Arduino via resistor at 220 Ohm!
 Else your LED can be damaged!!!
 Cathode of each LED need connect with GND of Arduino.
