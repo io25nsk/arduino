@@ -3,10 +3,12 @@ For work this module use Arduino Uno and sc56-11gwa.
 You need upload to Arduino sketch Firmata:
 Open Arduino IDE -> File -> Examples -> Firmata -> StandardFirmata -> upload.
 
-Then in your favorite Python IDE install python module firmata:
-pip install pyFirmata.
+Then in your favorite Python IDE install necessary python modules:
+pip install -r requirements.txt
 
-Pin-set of Arduino Uno and sc56-11gwa see below.
+Get info about serial-port used by your Arduino via Arduino IDE and set in name in board variable.
+
+Pin-set of Arduino Uno and sc56-11gwa see below. Use half Breadboard.
 Each anode of sc56-11gwa MUST be connect with pin of Arduino via resistor at 220 Ohm!
 Else your sc56-11gwa can be damaged!!!
 
