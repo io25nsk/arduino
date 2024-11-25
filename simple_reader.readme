@@ -1,0 +1,32 @@
+This module output russian text sliced to 16-char portions with timeout 1 second per each portion.
+Random text fetching from free API of https://fish-text.ru.
+You can read documentation about this API and expand text properties as you like or use any other text.
+
+For work this module use Arduino Uno and LCD MT–16S2H (like a Hitachi HD44780).
+
+You need upload to Arduino sketch Firmata:
+Open Arduino IDE -> File -> Examples -> Firmata -> StandardFirmata -> upload.
+
+Also you need download from https://github.com/mk90/LiquidCrystalRus
+and install LiquidCrystalRus library for russian language support.
+Open Arduino IDE -> Sketch -> Include Library -> Add .ZIP Library -> select zip archive with LiquidCrystalRus -> Open.
+
+Open Arduino IDE -> File -> Open -> select file lcdFirmata.ino -> Open -> upload.
+Thank for this sketch Varlen (https://gist.github.com/varlen/91170e7cdd61032107e833fce6b7106a).
+
+Then in your favorite Python IDE install necessary python modules:
+pip install -r requirements.txt
+
+Get info about serial-port used by your Arduino via Arduino IDE and set in name in board variable.
+
+Pin-set of Arduino Uno and MT–16S2H see below. Use half Breadboard.
+
+Arduino pin:    MT–16S2H pin:
+    5V             2, 15
+    GND         1, 16, 3, 5
+    2               14
+    3               13
+    4               12
+    5               11
+    8               6
+    9               4
